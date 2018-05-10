@@ -9,7 +9,7 @@
 }
 
 .content{
-  background-color: black;
+  background-color: $argos-grey-top-nav;
   color: white;
   margin: 0 auto;
   max-width: 1170px;
@@ -22,6 +22,8 @@
   img{
     height: 100%;
     width: 100%;
+    max-width: 70px;
+    max-height: 64px;
   }
 }
 
@@ -61,9 +63,86 @@
 #gif{
   padding: 7px;
   background-color:orange;
-  p{background-color: blue;}
+  div{
+    background-color: blue;
+    height: 4rem;
+    margin: 0;
+
+  }
+}
+#categories{
+  div{
+    padding: 7px;
+  }
+}
+.navbar{
+  background-color: $argos-grey-categories;
+  width: 100%;
+
+
+  button{
+    border:none;
+    &:focus{outline: none;}
+    span{color:blue;}
+  }
+  .navbar-collapse{
+    transition: all 1s;
+  }
+}
+.navbar-nav{
+  li{
+    border-bottom: 1px solid $argos-grey-top-nav;
+    line-height: 2rem;
+    a{
+      color: black;
+      font-size: 0.7rem;
+      font-variant: small-caps;
+    }
+  }
+}
+#primary-content{
+  div{
+    div{
+      padding: 0rem;
+      img{
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        width: 100%;}
+      div{
+        img{
+          height: 100%;
+          margin-bottom: 0.5rem;
+          margin-top: 0.5rem;
+          padding: 7px;
+        }
+      }
+    }
+  }
 }
 
+#content-split{display: none;}
 
+#secondary-content{
+  div{
+    div{
+      padding: 0rem;
+      img{
+        width: 100%;
+      }
+      #text-box{
+        background-color: white;
+        color: black;
+        text-align: center;
+        P{margin: 0;}
+      }
+      div{
+        img{
+          height: 100%;
+          padding: 0rem;
+        }
+      }
+    }
+  }
+}
 
 @import "_media-queries.scss";
