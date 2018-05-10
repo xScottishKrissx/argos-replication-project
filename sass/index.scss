@@ -2,6 +2,7 @@
 @import "_mixins.scss";
 @import "_variables.scss";
 
+//*{border: 1px solid blue;}
 // CSS here...
 .row-wrapper{
   background-color: red;
@@ -13,5 +14,56 @@
   margin: 0 auto;
   max-width: 1170px;
 }
+
+#logo{
+  //background-color: #ee3224;
+  //padding: 0.5rem;
+  padding: 0rem;
+  img{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+#nav-list{
+  background-color: $argos-grey-top-nav;
+  padding: 0.5rem;
+  //padding-top: 1rem;
+  ul{
+    display: inline-flex;
+    margin-bottom: 0rem;
+    //min-height: 45px;
+    padding: 0.25rem;
+    width: 100%;
+    li{
+      color: $argos-red;
+      display: flex;
+      flex:1 0 25%;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      span{
+        //padding: 0.3rem;
+      }
+    }
+  }
+}
+
+#search-bar{
+  background-color: pink;
+  padding: 7px;
+  input{
+    height: 3rem;
+    width: 85%;
+  }
+}
+
+#gif{
+  padding: 7px;
+  background-color:orange;
+  p{background-color: blue;}
+}
+
+
 
 @import "_media-queries.scss";

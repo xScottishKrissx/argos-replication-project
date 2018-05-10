@@ -7,4 +7,39 @@
   margin: 0 auto;
   max-width: 1170px; }
 
+#logo {
+  padding: 0rem; }
+  #logo img {
+    height: 100%;
+    width: 100%; }
+
+#nav-list {
+  background-color: #ccc;
+  padding: 0.5rem; }
+  #nav-list ul {
+    display: inline-flex;
+    margin-bottom: 0rem;
+    padding: 0.25rem;
+    width: 100%; }
+    #nav-list ul li {
+      color: #ee3224;
+      display: flex;
+      flex: 1 0 25%;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center; }
+
+#search-bar {
+  background-color: pink;
+  padding: 7px; }
+  #search-bar input {
+    height: 3rem;
+    width: 85%; }
+
+#gif {
+  padding: 7px;
+  background-color: orange; }
+  #gif p {
+    background-color: blue; }
+
 /*# sourceMappingURL=index.css.map */
