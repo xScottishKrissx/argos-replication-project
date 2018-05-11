@@ -9,7 +9,7 @@
 }
 
 .content{
-  background-color: $argos-grey-top-nav;
+  background-color: white;
   color: white;
   margin: 0 auto;
   max-width: 1170px;
@@ -101,19 +101,26 @@
   }
 }
 #primary-content{
-  div{
+  .row{
     div{
       padding: 0rem;
       img{
         margin-bottom: 0.5rem;
         margin-top: 0.5rem;
-        width: 100%;}
+        width: 100%;
+      }
       div{
+        width: 100%;
         img{
           height: 100%;
           margin-bottom: 0.5rem;
           margin-top: 0.5rem;
           padding: 7px;
+        }
+        div{
+          img{
+            width: 100%;
+          }
         }
       }
     }
@@ -123,12 +130,14 @@
 #content-split{display: none;}
 
 #secondary-content{
-  div{
+  .row{
+
     div{
       padding: 0rem;
       img{
         width: 100%;
       }
+
       #text-box{
         background-color: white;
         color: black;
@@ -136,11 +145,46 @@
         P{margin: 0;}
       }
       div{
+        width: 100%;
         img{
           height: 100%;
           padding: 0rem;
+
         }
       }
+    }
+  }
+}
+
+#image-gallery{
+  .row{
+    div{
+      margin-bottom: 0.25rem;
+      margin-top: 0.25rem;
+      padding: 0rem;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+.product-slider{
+  width: 100%;
+  //border: 1px solid black;
+  .slick-prev{background-color: red; left: 0;}
+  .slick-next{background-color: red; right:0;}
+  div{
+    //border: 1px solid black;
+    img{
+
+      height: 150px;
+      margin: 0 auto;
+      width: 150px;
+    }
+    h2,h3, p{
+      color: black;
+      text-align: center;
     }
   }
 }
