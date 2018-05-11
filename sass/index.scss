@@ -5,12 +5,12 @@
 //*{border: 1px solid blue;}
 // CSS here...
 .row-wrapper{
-  background-color: red;
+  background-color: white;
 }
 
 .content{
   background-color: white;
-  color: white;
+  color: black;
   margin: 0 auto;
   max-width: 1170px;
 }
@@ -127,6 +127,7 @@
   }
 }
 
+//not visible on mobile devices
 #content-split{display: none;}
 
 #secondary-content{
@@ -188,5 +189,116 @@
     }
   }
 }
+
+#email-signup{
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  .oi{font-size: 3rem;}
+  span{font-size: .75rem; }
+}
+
+#advert{
+  img{width: 100%;}
+}
+
+#app-advert{
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  .row{
+    img{height: 100%;}
+  }
+}
+#nearest-store-button{
+  background-color: cyan;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+//not visible on mobile devices
+#text-paragraph{
+  display: none;
+}
+
+
+#mobile-primary-footer{
+  border-top: 3px solid #333;
+  div{
+    text-align: center;
+    button{
+      background-color: $argos-footer-grey;
+      border: none;
+      border-radius: 0.25rem;
+      color: white;
+      font-weight: bold;
+      margin-bottom: 0rem;
+      margin-top: 1rem;
+      padding: 0.5rem;
+      width: 100%;
+    }
+  }
+}
+
+//not visible on mobile devices
+#first-footer{
+  display: none;
+  .row{
+    div{
+      ul{
+        list-style-type: none;
+      }
+    }
+  }
+}
+
+// not visible on mobile devices
+#discover-area{
+  //display: none;
+  border: 1px solid;
+  margin-top: 1rem;
+  //padding: 1rem;
+  .content{
+    max-width: 600px;
+    div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      img{
+        height: 25px;
+      }
+    }
+  }
+}
+
+#payment-info{
+  margin-top: 1rem;
+  .row{
+    div{
+      text-align: center;
+    }
+    #payment-method-cards{
+      .row{
+        margin: 0 auto;
+        max-width: 400px;
+        padding-bottom: 1rem;
+        div{
+          padding-left: 5px;
+          padding-right: 5px;
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 @import "_media-queries.scss";

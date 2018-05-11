@@ -1,9 +1,9 @@
 .row-wrapper {
-  background-color: red; }
+  background-color: white; }
 
 .content {
   background-color: white;
-  color: white;
+  color: black;
   margin: 0 auto;
   max-width: 1170px; }
 
@@ -126,6 +126,85 @@
   .product-slider div h2, .product-slider div h3, .product-slider div p {
     color: black;
     text-align: center; }
+
+#email-signup {
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem; }
+  #email-signup .oi {
+    font-size: 3rem; }
+  #email-signup span {
+    font-size: .75rem; }
+
+#advert img {
+  width: 100%; }
+
+#app-advert {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem; }
+  #app-advert .row img {
+    height: 100%; }
+
+#nearest-store-button {
+  background-color: cyan;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem; }
+
+#text-paragraph {
+  display: none; }
+
+#mobile-primary-footer {
+  border-top: 3px solid #333; }
+  #mobile-primary-footer div {
+    text-align: center; }
+    #mobile-primary-footer div button {
+      background-color: #333;
+      border: none;
+      border-radius: 0.25rem;
+      color: white;
+      font-weight: bold;
+      margin-bottom: 0rem;
+      margin-top: 1rem;
+      padding: 0.5rem;
+      width: 100%; }
+
+#first-footer {
+  display: none; }
+  #first-footer .row div ul {
+    list-style-type: none; }
+
+#discover-area {
+  border: 1px solid;
+  margin-top: 1rem; }
+  #discover-area .content {
+    max-width: 600px; }
+    #discover-area .content div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center; }
+      #discover-area .content div img {
+        height: 25px; }
+
+#payment-info {
+  margin-top: 1rem; }
+  #payment-info .row div {
+    text-align: center; }
+  #payment-info .row #payment-method-cards .row {
+    margin: 0 auto;
+    max-width: 400px;
+    padding-bottom: 1rem; }
+    #payment-info .row #payment-method-cards .row div {
+      padding-left: 5px;
+      padding-right: 5px; }
+      #payment-info .row #payment-method-cards .row div img {
+        width: 100%; }
 
 @media only screen and (min-width: 768px) {
   #content-split {
