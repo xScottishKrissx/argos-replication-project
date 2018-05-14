@@ -202,7 +202,7 @@
   img{width: 100%;}
 }
 
-#app-advert{
+.app-advert{
   background-color: red;
   color: white;
   text-align: center;
@@ -300,5 +300,75 @@
   }
 }
 
+#social-media{
+  > .row{
+    background-color: $argos-footer-grey;
+    color: white;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+    div{
+      .social-icons{
+        margin: 0 auto;
+        max-width: 15rem;
+
+        img{
+          height: 30px;
+        }
+      }
+    }
+    .app-advert{
+      background-color: $argos-footer-grey;
+      margin: 0 auto;
+      max-width: 400px;
+    }
+
+  }
+}
+
+#second-footer{
+  .row{
+    color: white;
+    background-color: black;
+    div{
+      padding: 0;
+      margin: 0 auto;
+      text-align: center;
+      border: 1px solid black;
+      ul{
+        list-style: none;
+        display: flex;
+        margin-bottom: 0rem;
+        li{
+          flex: 1 0 33.33%;
+          font-size: 12px;
+        }
+        #border-left-right{
+          border-left: 1px solid black;
+          border-right: 1px solid black;
+        }
+      }
+    }
+  }
+}
+
+#scroll-to-top-button{
+  bottom: 0;
+  border-radius: 100%;
+  border: 1px solid blue;
+  cursor: pointer;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  position: fixed;
+  right: -100%;
+
+  transition:  all 1s;
+  .row{
+    span{
+      color: blue;
+    }
+  }
+}
 
 @import "_media-queries.scss";

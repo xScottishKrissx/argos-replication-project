@@ -139,13 +139,13 @@
 #advert img {
   width: 100%; }
 
-#app-advert {
+.app-advert {
   background-color: red;
   color: white;
   text-align: center;
   padding-bottom: 2rem;
   padding-top: 2rem; }
-  #app-advert .row img {
+  .app-advert .row img {
     height: 100%; }
 
 #nearest-store-button {
@@ -205,6 +205,55 @@
       padding-right: 5px; }
       #payment-info .row #payment-method-cards .row div img {
         width: 100%; }
+
+#social-media > .row {
+  background-color: #333;
+  color: white;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  text-align: center; }
+  #social-media > .row div .social-icons {
+    margin: 0 auto;
+    max-width: 15rem; }
+    #social-media > .row div .social-icons img {
+      height: 30px; }
+  #social-media > .row .app-advert {
+    background-color: #333;
+    margin: 0 auto;
+    max-width: 400px; }
+
+#second-footer .row {
+  color: white;
+  background-color: black; }
+  #second-footer .row div {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black; }
+    #second-footer .row div ul {
+      list-style: none;
+      display: flex;
+      margin-bottom: 0rem; }
+      #second-footer .row div ul li {
+        flex: 1 0 33.33%;
+        font-size: 12px; }
+      #second-footer .row div ul #border-left-right {
+        border-left: 1px solid black;
+        border-right: 1px solid black; }
+
+#scroll-to-top-button {
+  bottom: 0;
+  border-radius: 100%;
+  border: 1px solid blue;
+  cursor: pointer;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  position: fixed;
+  right: -100%;
+  transition: all 1s; }
+  #scroll-to-top-button .row span {
+    color: blue; }
 
 @media only screen and (min-width: 768px) {
   #content-split {

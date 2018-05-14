@@ -28,4 +28,33 @@ $(document).ready(function() {
       //576px - 3 products
       //768px - 4 products
   });
+
+
+  //scroll to top button logic
+   function scrollToAnchor(aid) {
+     var aTag = $("meta[name='" + aid + "']");
+     $('html,body').animate({
+       scrollTop: aTag.offset().top
+     }, 300);
+     console.log("Scroll End");
+   }
+
+   $("#scroll-to-top-button").click(function() {
+     console.log("Scroll to top");
+     scrollToAnchor('viewport');
+   });
+});
+
+$(window).on("scroll", function(){
+  console.log( $(window).scrollTop()  );
+  //Show or Hide Depending on Position
+  if ($(window).scrollTop() < 1800) {
+    $("#scroll-to-top-button").css("visibility","hidden");
+    $("#scroll-to-top-button").css("right","-100%");
+
+  }else if($(window).scrollTop() > 1800){
+      $("#scroll-to-top-button").css("visibility","visible");
+      $("#scroll-to-top-button").css("right","0");
+  };
+
 });
