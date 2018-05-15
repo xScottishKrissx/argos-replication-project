@@ -39,20 +39,20 @@
       <div class="col-10 d-md-none mobile-nav">
         <div class="row">
           <div class="col-3">
-            <span class="oi oi-arrow-bottom"></span>
-            <p>Text</p>
+            <span class="oi oi-credit-card"></span>
+            <p>Stores</p>
           </div>
           <div class="col-3">
-            <span class="oi oi-arrow-bottom"></span>
-            <p>Text</p>
+            <span class="oi oi-magnifying-glass"></span>
+            <p>Search</p>
           </div>
           <div class="col-3">
-            <span class="oi oi-arrow-bottom"></span>
-            <p>Text</p>
+            <span class="oi oi-heart"></span>
+            <p>Wishlist</p>
           </div>
           <div class="col-3">
-            <span class="oi oi-arrow-bottom"></span>
-            <p>Text</p>
+            <span class="oi oi-cart"></span>
+            <p>Trolley</p>
           </div>
         </div>
 
@@ -69,13 +69,13 @@
             <div class="row">
 
               <div class="d-none d-md-block col-12">
-                <p>Nav</p>
+
               </div>
 
               <div class="col-12 search-bar">
                 <div class="row">
-                  <input class="col-10" type="search" name="" value="">
-                  <input class="col-2" type="submit" name="" value="submit">
+                  <input class="col-11" type="search" name="" value="">
+                  <span class="col-1 oi oi-magnifying-glass"></span>
                 </div>
 
               </div>
@@ -84,37 +84,7 @@
           </div>
         </div>
       </div>
-
-
-
-
-
-      <!--
-      <div class="col-3" id="logo">
-        <img src="assets/graphics/logo.png" alt="welcome to argos">
-      </div>
-
-
-      <div class="col-9" id="nav-list">
-        <ul>
-          <li><span class="oi oi-medical-cross"></span>Stores</li>
-          <li><span class="oi oi-magnifying-glass"></span>Search</li>
-          <li><span class="oi oi-star"></span>Wishlist</li>
-          <li><span class="oi oi-cart"></span>Trolley</li>
-        </ul>
-      </div>
-
-      <div class="col-12 " id="search-bar">
-        <input type="search" name="" value="">
-        <span class="oi oi-magnifying-glass"></span>
-      </div>
-
-    -->
     </div>
-
-
-
-
   </div>
 
 
@@ -195,14 +165,15 @@
       <div class="col-12 col-md-6" >
         <img src="assets/img/primary-2.jpg" alt="">
         <div class="row">
-            <img class="col-6" src="assets/img/primary-3.jpg" alt="">
-            <img class="col-6" src="assets/img/primary-4.jpg" alt="">
+            <img class="col-6 left" src="assets/img/primary-3.jpg" alt="">
+            <img class="col-6 right" src="assets/img/primary-4.jpg" alt="">
         </div>
+
       </div>
     </div>
   </div>
 
-  <div class="row-wrapper" id="content-split">
+  <div class="row-wrapper d-none d-md-block" id="content-split">
     <div class="row content">
       <p>get it today. more time to pay. you can pay later with the
       argos card. representative 29.9% apr variable</p>
@@ -219,13 +190,13 @@
 
       <div class="col-12 col-md-6" >
         <div class="" id="text-box">
-          <p>MORE TRENDS, MORE FASHION, MORE YOU</p>
+          <h3>MORE TRENDS, MORE FASHION, MORE YOU</h3>
           <p>Say hello to the Tu clothing collection</p>
-          <p>SHOP THE LATEST TRENDS</p>
+          <h5>SHOP THE LATEST TRENDS</h5>
         </div>
         <div class="row">
-            <img class="col-6" src="assets/img/secondary-2.jpg" alt="">
-            <img class="col-6" src="assets/img/secondary-3.jpg" alt="">
+            <img class="col-6 left" src="assets/img/secondary-2.jpg" alt="">
+            <img class="col-6 right" src="assets/img/secondary-3.jpg" alt="">
         </div>
 
       </div>
@@ -263,6 +234,9 @@
 
   <div class="row-wrapper" id="suggestions-slider">
     <div class="row content">
+      <div class="col-12 slider-header">
+        <h3>WE THINK YOU'LL LIKE</h3>
+      </div>
       <div class="product-slider">
         <div>
           <img src="assets/img/slider-1.jpeg" alt="">
@@ -315,18 +289,18 @@
   </div>
 
   <div class="row-wrapper" >
-    <div class="row content">
-        <div class="col-12" id="email-signup">
+    <div class="row content" id="email-signup">
+        <div class="col-12" >
           <span class="oi oi-envelope-closed"></span>
           <h4>Get our offers in your inbox</h4>
 
           <form>
-            E-mail:
-            <input type="email" name="email">
-            <input type="submit">
+            <input type="email" name="email" placeholder="Email Address" id="enter-email">
+            <input type="submit" value="SUBMIT" id="submit-email">
           </form>
-          <span>By submitting your details you consent to their use in accordance with our <a href="#">Privacy Policy.</a></span>
         </div>
+        <span>By submitting your details you consent to their use in accordance with our <a href="#">Privacy Policy.</a></span>
+
     </div>
   </div>
 
@@ -357,14 +331,14 @@
       <div class="col-12" id="nearest-store-button">
         <h4>FIND YOUR NEAREST STORE</h4>
         <form class="" action="index.html" method="post">
-          <input type="text" value="">
-          <input type="submit"  value="Let's Go!">
+          <input id="postcode" type="text" placeholder="My town or postcode is..." value="">
+          <input id="submit-postcode" type="submit"  value="Let's Go!">
         </form>
       </div>
     </div>
   </div>
 
-  <div class="row-wrapper" id="text-paragraph">
+  <div class="row-wrapper d-none d-md-block" id="text-paragraph">
     <div class="row content">
       <div class="col-12">
         <p>Spring has finally sprung, and at Argos we have everything you need to make the most of the warmer days. From leisure and fun to the practical, we can make your spring everything it should be.</p>
@@ -396,7 +370,7 @@
    </div>
  </div>
 
-  <div class="row-wrapper" id="first-footer">
+  <div class="row-wrapper d-none d-md-block" id="first-footer">
     <div class="row content">
       <div class="col-3">
         <ul>Customer Service
@@ -550,7 +524,7 @@
   </div>
 
   <div class="row-wrapper" id="scroll-to-top-button">
-    <div class="row content">
+    <div class="row">
       <span class="oi oi-chevron-top"></span>
     </div>
   </div>

@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Anton");
+h4 {
+  font-family: Anton, sans-serif; }
+
 .row-wrapper {
   background-color: white; }
 
@@ -13,22 +17,39 @@
 #top-nav .content img {
   max-width: 70px;
   width: 100%;
-  height: 60px; }
+  height: 100%; }
 
 .mobile-nav {
   text-align: center; }
+  .mobile-nav .row {
+    padding-top: 1rem;
+    margin: 0 auto;
+    max-width: 30rem; }
+    .mobile-nav .row div {
+      cursor: pointer; }
+      .mobile-nav .row div span {
+        color: red;
+        font-size: 1.5rem; }
+      .mobile-nav .row div p {
+        margin-top: -0.5rem; }
 
 .desktop-nav {
-  background-color: red;
-  padding: 1rem; }
+  background-color: #dadcdc;
+  padding: 0.5rem; }
   .desktop-nav .row {
     margin: 0; }
     .desktop-nav .row div {
       padding: 0; }
-      .desktop-nav .row div .row {
+      .desktop-nav .row div .search-bar {
         margin: 0; }
-        .desktop-nav .row div .row div {
+        .desktop-nav .row div .search-bar div {
           padding: 0; }
+          .desktop-nav .row div .search-bar div span {
+            background-color: #333;
+            color: white;
+            font-size: 1.25rem;
+            padding: 0.75rem;
+            text-align: center; }
 
 #nav-list {
   background-color: #ccc;
@@ -91,17 +112,19 @@
     margin-top: 0.5rem;
     width: 100%; }
   #primary-content .row div div {
+    margin: 0;
     width: 100%; }
     #primary-content .row div div img {
       height: 100%;
       margin-bottom: 0.5rem;
       margin-top: 0.5rem;
       padding: 7px; }
+    #primary-content .row div div .left {
+      padding-left: 0; }
+    #primary-content .row div div .right {
+      padding-right: 0; }
     #primary-content .row div div div img {
       width: 100%; }
-
-#content-split {
-  display: none; }
 
 #secondary-content .row div {
   padding: 0rem; }
@@ -110,14 +133,28 @@
   #secondary-content .row div #text-box {
     background-color: white;
     color: black;
+    padding-bottom: 6rem;
+    padding-top: 6rem;
     text-align: center; }
-    #secondary-content .row div #text-box P {
+    #secondary-content .row div #text-box h3, #secondary-content .row div #text-box h5 {
+      font-family: Anton, sans-serif; }
+    #secondary-content .row div #text-box h5 {
+      text-decoration: underline;
+      padding-top: 1rem; }
+    #secondary-content .row div #text-box p {
+      font-weight: lighter;
       margin: 0; }
   #secondary-content .row div div {
+    margin: 0;
+    margin-bottom: 1rem;
     width: 100%; }
     #secondary-content .row div div img {
       height: 100%;
-      padding: 0rem; }
+      padding: 0px; }
+    #secondary-content .row div div .left {
+      padding-left: 0; }
+    #secondary-content .row div div .right {
+      padding-right: 0; }
 
 #image-gallery .row div {
   margin-bottom: 0.25rem;
@@ -126,53 +163,98 @@
   #image-gallery .row div img {
     width: 100%; }
 
-.product-slider {
+#suggestions-slider .content {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+#suggestions-slider .slider-header {
+  text-align: center;
+  font-family: Anton, sans-serif; }
+#suggestions-slider .product-slider {
+  cursor: pointer;
   width: 100%; }
-  .product-slider .slick-prev {
+  #suggestions-slider .product-slider .slick-prev {
     background-color: red;
-    left: 0; }
-  .product-slider .slick-next {
+    left: 0;
+    display: none !important; }
+  #suggestions-slider .product-slider .slick-next {
     background-color: red;
-    right: 0; }
-  .product-slider div img {
+    right: 0;
+    display: none !important; }
+  #suggestions-slider .product-slider div img {
     height: 150px;
     margin: 0 auto;
     width: 150px; }
-  .product-slider div h2, .product-slider div h3, .product-slider div p {
+  #suggestions-slider .product-slider div h2, #suggestions-slider .product-slider div h3, #suggestions-slider .product-slider div p {
     color: black;
     text-align: center; }
 
 #email-signup {
-  text-align: center;
-  padding-bottom: 2rem;
-  padding-top: 2rem; }
-  #email-signup .oi {
-    font-size: 3rem; }
+  padding-bottom: 3rem;
+  padding-top: 3rem; }
+  #email-signup div {
+    background-color: #dadcdc;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem; }
+    #email-signup div .oi {
+      font-size: 3rem; }
+    #email-signup div h4 {
+      font-weight: 400; }
+    #email-signup div form #enter-email {
+      border: 1px solid grey;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem; }
+    #email-signup div form #submit-email {
+      background-color: white;
+      border: 1px solid black;
+      font-weight: bold;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem; }
   #email-signup span {
-    font-size: .75rem; }
+    font-size: .75rem;
+    margin: 0 auto; }
 
 #advert img {
   width: 100%; }
 
 .app-advert {
-  background-color: red;
+  background-color: #d42114;
   color: white;
   text-align: center;
   padding-bottom: 2rem;
   padding-top: 2rem; }
-  .app-advert .row img {
-    height: 100%; }
+  .app-advert h4 {
+    font-family: Anton, sans-serif; }
+  .app-advert h5 {
+    font-weight: 100; }
+  .app-advert .row {
+    margin: 0 auto;
+    max-width: 22rem; }
+    .app-advert .row img {
+      height: 100%; }
 
 #nearest-store-button {
-  background-color: cyan;
+  background-color: #69c;
+  color: white;
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding-bottom: 2rem;
   padding-top: 2rem; }
-
-#text-paragraph {
-  display: none; }
+  #nearest-store-button h4, #nearest-store-button form {
+    display: inline-block; }
+  #nearest-store-button form #postcode, #nearest-store-button form #submit-postcode {
+    padding: 0.5rem; }
+  #nearest-store-button form #submit-postcode {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding-left: 2rem;
+    padding-right: 2rem; }
 
 #mobile-primary-footer {
   border-top: 3px solid #333; }
@@ -189,10 +271,8 @@
       padding: 0.5rem;
       width: 100%; }
 
-#first-footer {
-  display: none; }
-  #first-footer .row div ul {
-    list-style-type: none; }
+#first-footer .row div ul {
+  list-style-type: none; }
 
 #discover-area {
   border: 1px solid;
@@ -261,14 +341,17 @@
   border-radius: 100%;
   border: 1px solid blue;
   cursor: pointer;
+  margin: 0 auto;
   margin-right: 1rem;
   margin-bottom: 1rem;
   padding: 1rem;
   position: fixed;
   right: -100%;
+  width: 3rem;
   transition: all 1s; }
   #scroll-to-top-button .row span {
-    color: blue; }
+    color: blue;
+    margin: 0 auto; }
 
 @media only screen and (min-width: 768px) {
   #content-split {

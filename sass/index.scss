@@ -1,9 +1,14 @@
 //@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 @import "_mixins.scss";
 @import "_variables.scss";
+//Replaces Argos Compressed
+  @import url('https://fonts.googleapis.com/css?family=Anton');
 
 //*{border: 1px solid blue;}
 // CSS here...
+
+h4{font-family: Anton, sans-serif;}
+
 .row-wrapper{
   background-color: white;
 }
@@ -23,7 +28,7 @@
     img{
       max-width: 70px;
       width: 100%;
-      height: 60px;
+      height: 100%;
     }
   }
 }
@@ -31,23 +36,49 @@
 
 .mobile-nav{
   text-align: center;
+  .row{
+    padding-top: 1rem;
+    margin: 0 auto;
+    max-width: 30rem;
+    div{
+      //border: 1px solid black;
+      cursor: pointer;
+      span{
+        color: red;
+        font-size: 1.5rem;
+      }
+      p{
+        margin-top: -0.5rem;
+      }
+    }
+  }
 }
 .desktop-nav{
-  background-color: red;
-  padding: 1rem;
+  background-color: $argos-grey-search-bar;
+  padding: 0.5rem;
   .row{
     margin: 0;
     div{
+
       padding: 0;
-      .row{
+      .search-bar{
         margin: 0;
         div{
           padding: 0;
+          span{
+            background-color: $argos-footer-grey;
+            color: white;
+            font-size:1.25rem;
+            padding: 0.75rem;
+            text-align: center;
+
+          }
         }
       }
     }
   }
 }
+
 
 
 #nav-list{
@@ -132,7 +163,10 @@
         margin-top: 0.5rem;
         width: 100%;
       }
+
       div{
+        //background-color: red;
+        margin: 0;
         width: 100%;
         img{
           height: 100%;
@@ -140,18 +174,21 @@
           margin-top: 0.5rem;
           padding: 7px;
         }
+        .left{padding-left: 0;}
+        .right{padding-right: 0;}
+
         div{
           img{
             width: 100%;
           }
+
         }
       }
     }
   }
 }
-
 //not visible on mobile devices
-#content-split{display: none;}
+//#content-split{}
 
 #secondary-content{
   .row{
@@ -165,16 +202,29 @@
       #text-box{
         background-color: white;
         color: black;
+        padding-bottom: 6rem;
+        padding-top: 6rem;
         text-align: center;
-        P{margin: 0;}
+        h3,h5{
+          font-family: Anton, sans-serif;
+        }
+        h5{text-decoration: underline; padding-top: 1rem;}
+        p{
+          font-weight: lighter;
+          margin: 0;
+        }
       }
       div{
+        margin: 0;
+        margin-bottom: 1rem;
         width: 100%;
         img{
           height: 100%;
-          padding: 0rem;
+          padding: 0px;
 
         }
+        .left{padding-left: 0;}
+        .right{padding-right: 0;}
       }
     }
   }
@@ -193,32 +243,69 @@
   }
 }
 
-.product-slider{
-  width: 100%;
-  //border: 1px solid black;
-  .slick-prev{background-color: red; left: 0;}
-  .slick-next{background-color: red; right:0;}
-  div{
-    //border: 1px solid black;
-    img{
+#suggestions-slider{
+  .content{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 
-      height: 150px;
-      margin: 0 auto;
-      width: 150px;
-    }
-    h2,h3, p{
-      color: black;
-      text-align: center;
+  .slider-header{
+    text-align: center;
+    font-family: Anton, sans-serif;
+  }
+  .product-slider{
+    cursor: pointer;
+    width: 100%;
+    //border: 1px solid black;
+    .slick-prev{background-color: red; left: 0; display: none !important;}
+    .slick-next{background-color: red; right:0; display: none !important;}
+    div{
+      //border: 1px solid black;
+      img{
+
+        height: 150px;
+        margin: 0 auto;
+        width: 150px;
+      }
+      h2,h3, p{
+        color: black;
+        text-align: center;
+      }
     }
   }
 }
-
 #email-signup{
-  text-align: center;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
-  .oi{font-size: 3rem;}
-  span{font-size: .75rem; }
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  div{
+    background-color: $argos-grey-search-bar;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    .oi{font-size: 3rem;}
+    h4{font-weight: 400;}
+    form{
+      #enter-email{
+        border: 1px solid grey;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+      #submit-email{
+        background-color: white;
+        border: 1px solid black;
+        font-weight: bold;
+        padding-left:2rem;
+        padding-right: 2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+    }
+
+
+  }
+    span{font-size: .75rem; margin: 0 auto;}
 }
 
 #advert{
@@ -226,27 +313,43 @@
 }
 
 .app-advert{
-  background-color: red;
+  background-color: $argos-app-banner-red;
   color: white;
   text-align: center;
   padding-bottom: 2rem;
   padding-top: 2rem;
+  h4{font-family: Anton, sans-serif;}
+  h5{font-weight: 100;}
   .row{
+    margin: 0 auto;
+    max-width: 22rem;
     img{height: 100%;}
   }
 }
 #nearest-store-button{
-  background-color: cyan;
+  background-color: $argos-nearest-store-blue;
+  color: white;
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding-bottom: 2rem;
   padding-top: 2rem;
+  h4, form{display: inline-block;}
+  form{
+    #postcode, #submit-postcode{padding: 0.5rem;}
+    #submit-postcode{
+      border: 1px solid white;
+      background-color: transparent;
+      color: white;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+  }
 }
 
 //not visible on mobile devices
 #text-paragraph{
-  display: none;
 }
 
 
@@ -270,7 +373,7 @@
 
 //not visible on mobile devices
 #first-footer{
-  display: none;
+
   .row{
     div{
       ul{
@@ -282,7 +385,7 @@
 
 // not visible on mobile devices
 #discover-area{
-  //display: none;
+
   border: 1px solid;
   margin-top: 1rem;
   //padding: 1rem;
@@ -380,16 +483,19 @@
   border-radius: 100%;
   border: 1px solid blue;
   cursor: pointer;
+  margin: 0 auto;
   margin-right: 1rem;
   margin-bottom: 1rem;
   padding: 1rem;
   position: fixed;
   right: -100%;
+  width: 3rem;
 
   transition:  all 1s;
   .row{
     span{
       color: blue;
+      margin: 0 auto;
     }
   }
 }
