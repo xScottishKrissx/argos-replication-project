@@ -13,19 +13,42 @@
   color: black;
   margin: 0 auto;
   max-width: 1170px;
+  min-width: 420px;
 }
 
-#logo{
-  //background-color: #ee3224;
-  //padding: 0.5rem;
-  padding: 0rem;
-  img{
-    height: 100%;
-    width: 100%;
-    max-width: 70px;
-    max-height: 64px;
+#top-nav{
+  //*{border: 1px solid black;}
+  .content{
+    >:nth-child(1){padding: 0;}
+    img{
+      max-width: 70px;
+      width: 100%;
+      height: 60px;
+    }
   }
 }
+
+
+.mobile-nav{
+  text-align: center;
+}
+.desktop-nav{
+  background-color: red;
+  padding: 1rem;
+  .row{
+    margin: 0;
+    div{
+      padding: 0;
+      .row{
+        margin: 0;
+        div{
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
 
 #nav-list{
   background-color: $argos-grey-top-nav;
