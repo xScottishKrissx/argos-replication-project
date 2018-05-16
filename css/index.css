@@ -12,12 +12,17 @@ h4 {
   max-width: 1170px;
   min-width: 420px; }
 
-#top-nav .content > :nth-child(1) {
-  padding: 0; }
-#top-nav .content img {
-  max-width: 70px;
+#top-nav {
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: 100%; }
+  z-index: 100000; }
+  #top-nav .content > :nth-child(1) {
+    padding: 0; }
+  #top-nav .content img {
+    max-width: 70px;
+    width: 100%;
+    height: 100%; }
 
 .mobile-nav {
   text-align: center; }
@@ -45,11 +50,18 @@ h4 {
         .desktop-nav .row div .search-bar div {
           padding: 0; }
           .desktop-nav .row div .search-bar div span {
-            background-color: #333;
+            background-color: #585858;
             color: white;
             font-size: 1.25rem;
             padding: 0.75rem;
             text-align: center; }
+
+.desktop-navbar .row div ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0; }
+  .desktop-navbar .row div ul li {
+    flex: 1 0 25%; }
 
 #nav-list {
   background-color: #ccc;
@@ -67,12 +79,25 @@ h4 {
       justify-content: center;
       text-align: center; }
 
-#search-bar {
+.search-bar {
   background-color: pink;
   padding: 7px; }
-  #search-bar input {
+  .search-bar .row input {
+    border: none;
     height: 3rem;
     width: 85%; }
+
+.other-links .row {
+  padding-left: 1rem !important;
+  text-align: center; }
+  .other-links .row div {
+    border: 1px solid black; }
+
+#whats-hot {
+  margin-right: 1rem; }
+
+.gif-wrapper {
+  margin-top: 9.5rem; }
 
 #gif {
   padding: 7px;
@@ -192,7 +217,7 @@ h4 {
   padding-bottom: 3rem;
   padding-top: 3rem; }
   #email-signup div {
-    background-color: #dadcdc;
+    background-color: #f5f5f5;
     text-align: center;
     padding-bottom: 2rem;
     padding-top: 2rem; }
@@ -202,6 +227,7 @@ h4 {
       font-weight: 400; }
     #email-signup div form #enter-email {
       border: 1px solid grey;
+      margin-right: -0.25rem;
       padding-left: 2rem;
       padding-right: 2rem;
       padding-top: 0.5rem;
@@ -216,10 +242,13 @@ h4 {
       padding-bottom: 0.5rem; }
   #email-signup span {
     font-size: .75rem;
-    margin: 0 auto; }
+    margin: 0 auto;
+    text-align: center; }
 
-#advert img {
-  width: 100%; }
+#advert {
+  padding-bottom: 4rem; }
+  #advert img {
+    width: 100%; }
 
 .app-advert {
   background-color: #d42114;
@@ -257,7 +286,9 @@ h4 {
     padding-right: 2rem; }
 
 #mobile-primary-footer {
-  border-top: 3px solid #333; }
+  border-bottom: 2px solid #333;
+  border-top: 3px solid #333;
+  padding-bottom: 2rem; }
   #mobile-primary-footer div {
     text-align: center; }
     #mobile-primary-footer div button {
@@ -319,7 +350,11 @@ h4 {
 
 #second-footer .row {
   color: white;
-  background-color: black; }
+  background-color: black;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem; }
   #second-footer .row div {
     padding: 0;
     margin: 0 auto;
@@ -328,13 +363,14 @@ h4 {
     #second-footer .row div ul {
       list-style: none;
       display: flex;
-      margin-bottom: 0rem; }
+      margin-bottom: 0rem;
+      padding: 0; }
       #second-footer .row div ul li {
         flex: 1 0 33.33%;
-        font-size: 12px; }
+        font-size: 14px; }
       #second-footer .row div ul #border-left-right {
-        border-left: 1px solid black;
-        border-right: 1px solid black; }
+        border-left: 1px solid white;
+        border-right: 1px solid white; }
 
 #scroll-to-top-button {
   bottom: 0;
@@ -355,6 +391,25 @@ h4 {
 
 @media only screen and (min-width: 768px) {
   #content-split {
-    display: block; } }
+    display: block; }
+
+  .navbar {
+    display: block; }
+
+  .navbar-brand {
+    display: inline-block !important; }
+
+  #primary-content * {
+    border: 1px solid black; }
+  #primary-content .row div {
+    padding-left: 15px;
+    padding-right: 15px; }
+    #primary-content .row div .row {
+      padding-left: 0rem;
+      padding-right: 0rem; }
+      #primary-content .row div .row :nth-child(1) {
+        padding-left: 0rem; }
+      #primary-content .row div .row :nth-child(2) {
+        padding-right: 0rem; } }
 
 /*# sourceMappingURL=index.css.map */

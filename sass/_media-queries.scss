@@ -13,4 +13,25 @@
 
 @media only screen and (min-width:$tablet) {
   #content-split{display: block;}
+
+  .navbar{
+    display: block;
+  }
+  .navbar-brand{display: inline-block !important}
+
+  #primary-content{
+    *{border: 1px solid black;}
+    .row{
+      div{
+        padding-left: 15px;
+        padding-right: 15px;
+        .row{
+          padding-left: 0rem;
+          padding-right: 0rem;
+          :nth-child(1){padding-left: 0rem;}
+          :nth-child(2){padding-right: 0rem;}
+        }
+      }
+    }
+  }
 }
