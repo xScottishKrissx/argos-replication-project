@@ -1,37 +1,213 @@
-
-
-
-
 @media only screen and (min-width:400px) {
 }
 
-
 @media only screen and (min-width:576px) {
-
 }
 
-
 @media only screen and (min-width:$tablet) {
+
+//Resets the sticky Nav
+  #top-nav{
+    position: relative;
+    top: auto;
+    width: auto;
+    z-index: auto;
+  }
+
+  .gif-wrapper{
+    margin-top: 1rem;
+  }
+//
+
+
   #content-split{display: block;}
 
-  .navbar{
-    display: block;
-  }
+  .navbar{display: block;}
   .navbar-brand{display: inline-block !important}
 
   #primary-content{
-    *{border: 1px solid black;}
+    //*{border: 1px solid black;}
     .row{
+      >:nth-child(1){padding-right: 7px;}
+      >:nth-child(2){padding-left: 7px;}
       div{
         padding-left: 15px;
         padding-right: 15px;
+        img{margin-bottom: 0.7rem;}
         .row{
           padding-left: 0rem;
           padding-right: 0rem;
+
+          padding-top: 0;
+          margin-top: 0;
+          padding-bottom: 0;
+          margin-bottom: 0;
+          img{
+            padding-top: 0;
+            margin-bottom: 0;
+            margin-top: 0;
+            height: 100%;
+            padding-bottom: 0;
+          }
           :nth-child(1){padding-left: 0rem;}
           :nth-child(2){padding-right: 0rem;}
         }
       }
     }
   }
+
+  #content-split{
+    //border: 1px solid black;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+    .row{
+      div{
+        display: flex;
+        padding: 0;
+        width: 100%;
+        hr{
+          background-color: grey;
+          width: 5rem;
+        }
+        #hr-one{margin-left: 0;}
+        p{
+          font-size: 12px;
+          margin: 0 auto;
+          text-align: center;
+        }
+        #hr-two{margin-right: 0;}
+      }
+    }
+  }
+
+  #secondary-content{
+    margin-bottom: 3rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    //*{border:1px solid black;}
+    .row{
+      div{
+        div{
+          height:50%;
+          margin-bottom: 0rem;
+        }
+        #text-box{
+          border-bottom: 1px solid grey;
+          border-right: 1px solid grey;
+          height: 50%;
+          position: absolute;
+          bottom: 0;
+          padding-bottom: 0;
+          padding-top: 0;
+          h3,p,h5,*{margin:0 auto;}
+        }
+        #2-image-tiles{
+          position: absolute;
+          top: 0;
+        }
+      }
+    }
+  }
+
+  #image-gallery{
+    .row{
+      //padding: 15px;
+      padding-left: 10px;
+      padding-right: 10px;
+      div{
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+  }
+  #email-signup{
+    padding-left: 15px;
+    padding-right: 15px;
+    div{
+      display: inline-flex;
+      h4{margin: 0 auto;}
+    }
+  }
+  #advert{
+    img{
+      max-height: 8rem;
+    }
+  }
+  .app-advert{
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    .row{
+      img{height: 60%;}
+    }
+  }
+
+  #text-paragraph{
+    .row{
+      div{
+        font-size: 0.75rem;
+      }
+    }
+  }
+
+  #first-footer{
+    //*{border: 1px solid black;}
+    .row{
+      background-color: $argos-footer-grey;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+      div{
+        ul{
+          color: white;
+          font-weight: bold;
+          padding-left: 0;
+          padding-right: 0;
+          li{
+            font-size:0.75rem;
+            font-weight: normal;
+            line-height: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  #discover-area{
+    border: none;
+    border-bottom: 2px solid $argos-footer-grey;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    .row{
+      div{
+        h5{
+          color: $argos-footer-grey;
+        }
+      }
+    }
+  }
+
+  #payment-info{
+    .row{
+      div{
+        color: $argos-footer-grey;
+        p{font-size: 0.75rem;}
+      }
+      #payment-method-cards{
+        .row{
+          div{
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+
+  #social-media{
+    //*{border: 1px solid white;}
+  }
+  .social-icons{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
 }
