@@ -130,6 +130,57 @@ h4 {
     font-size: 0.7rem;
     font-variant: small-caps; }
 
+#nested-dropdown div {
+  background-color: #dadcdc; }
+
+.main-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #dadcdc; }
+  .main-nav :before, .main-nav :after {
+    content: "";
+    display: table; }
+  .main-nav :after {
+    clear: both; }
+  .main-nav li {
+    display: block;
+    position: relative;
+    float: left;
+    width: 15rem; }
+    .main-nav li:hover > ul {
+      display: block;
+      position: absolute; }
+    .main-nav li:hover li {
+      float: none; }
+    .main-nav li:hover li a:hover {
+      background-color: #dadcdc; }
+    .main-nav li a {
+      display: block;
+      padding: 1rem;
+      text-decoration: none;
+      white-space: nowrap;
+      color: black; }
+    .main-nav li ul {
+      border: 1px solid #dadcdc;
+      display: none;
+      height: 45rem;
+      padding-left: 0;
+      width: 100%; }
+      .main-nav li ul li {
+        border-top: 0;
+        width: 100%; }
+      .main-nav li ul ul {
+        left: 100%;
+        top: 0%;
+        border: 1px solid #dadcdc; }
+
+.nav-levels {
+  width: 10rem; }
+
+#nav-level-3 {
+  top: -102%; }
+
 #primary-content .row div {
   padding: 0rem; }
   #primary-content .row div img {
@@ -500,8 +551,13 @@ h4 {
     .app-advert .row img {
       height: 60%; }
 
-  #text-paragraph .row div {
-    font-size: 0.75rem; }
+  #text-paragraph .row {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem; }
+    #text-paragraph .row div {
+      font-size: 0.75rem; }
+      #text-paragraph .row div p {
+        line-height: 0.7rem; }
 
   #first-footer .row {
     background-color: #333;
@@ -523,7 +579,8 @@ h4 {
     padding-bottom: 1rem;
     padding-top: 1rem; }
     #discover-area .row div h5 {
-      color: #333; }
+      color: #333;
+      font-size: 1rem; }
 
   #payment-info .row div {
     color: #333; }
@@ -532,8 +589,17 @@ h4 {
   #payment-info .row #payment-method-cards .row div {
     margin: 0 auto; }
 
+  #social-media .row {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem; }
+
   .social-icons {
     padding-bottom: 1rem;
-    padding-top: 1rem; } }
+    padding-top: 1rem; }
+
+  #second-footer .row div {
+    max-width: 370px; }
+    #second-footer .row div ul li {
+      font-size: 12px; } }
 
 /*# sourceMappingURL=index.css.map */

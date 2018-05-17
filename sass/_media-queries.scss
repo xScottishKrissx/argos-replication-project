@@ -143,9 +143,15 @@
   }
 
   #text-paragraph{
+
     .row{
+      padding-bottom: 0.5rem;
+      padding-top: 0.5rem;
       div{
         font-size: 0.75rem;
+        p{
+          line-height: 0.7rem;
+        }
       }
     }
   }
@@ -181,6 +187,7 @@
       div{
         h5{
           color: $argos-footer-grey;
+          font-size: 1rem;
         }
       }
     }
@@ -204,10 +211,28 @@
 
   #social-media{
     //*{border: 1px solid white;}
+    .row{
+      padding-bottom: 0.5rem;
+      padding-top:0.5rem;
+    }
   }
   .social-icons{
     padding-bottom: 1rem;
     padding-top: 1rem;
   }
+
+  #second-footer{
+    .row{
+      div{
+        max-width: 370px;
+        ul{
+          li{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
 
 }
