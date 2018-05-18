@@ -1,4 +1,16 @@
 $(document).ready(function() {
+//  $(".main-nav li ul").addClass("toggle-categories");
+//  $(".categories-header").click(function(){
+//    console.log("show and hide dropdown menu");
+//    $(".main-nav li ul").toggleClass("toggle-categories");
+//    $(".oi-caret-bottom").toggleClass("rotate-180-deg");
+
+//  })
+
+
+
+
+
   $('.product-slider').slick({
     dots: true,
     infinite: true,
