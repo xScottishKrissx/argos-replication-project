@@ -236,3 +236,22 @@
 
 
 }
+@media only screen and (min-width:992px) {
+
+  .main-nav{
+
+  }
+}
+
+@media only screen and (min-width:1170px) {
+  #top-nav, #categories, #nested-dropdown{
+    background-color: $argos-grey-categories;
+  }
+
+
+  #nested-dropdown{
+    .row{
+      padding-left: 7px;
+    }
+  }
+}

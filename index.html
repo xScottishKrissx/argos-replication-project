@@ -70,13 +70,13 @@
 
               <div class="d-none d-md-block col-12 desktop-navbar">
                 <div class="row">
-                  <div class="col-4">
+                  <div class="col-4 top-nav-left">
                     <ul>
                       <li><span class="oi oi-question-mark"></span>Help</li>
                       <li><span class="oi oi-location"></span>Stores</li>
                     </ul>
                   </div>
-                  <div class="col-8">
+                  <div class="col-8 top-nav-right">
                     <ul>
                       <li><span class="oi oi-person"></span>Sign In</li>
                       <li><span class="oi oi-heart"></span>Wishlist</li>
@@ -88,22 +88,21 @@
 
               <div class="col-12 col-md-6 search-bar">
                 <div class="row">
-                  <input class="col-10" type="search" placeholder="Search Argos..." value="">
-                  <span class="col-2 oi oi-magnifying-glass"></span>
+                  <input class="col-11" type="search" placeholder="Search Argos..." value="">
+                  <span class="col-1 oi oi-magnifying-glass"></span>
                 </div>
               </div>
 
               <div class="col-12 col-md-6 other-links">
                 <div class="row">
-                  <div class="col-5" id="whats-hot">
+                  <div  id="whats-hot">
                     <p>WHATS HOT</p>
                   </div>
-                  <div class="col-5 " id="clearance">
+                  <div id="clearance">
                     <p>CLEARANCE</p>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -112,17 +111,33 @@
   </div>
 
 
-<!--
 
-  <div class="row-wrapper gif-wrapper" >
-    <div class="row content">
-      <div class="col-12" id="gif">
-        <div class="">A gif</div>
+
+  <div class="row-wrapper gif-wrapper" id="gif">
+    <div class="row content ">
+      <div class="col-12 mobile-gif" >
+        <div class="d-lg-none">A gif</div>
+
+        <div class="row desktop-gif d-none d-lg-flex">
+
+          <div class="col-4">
+            Image 1
+          </div>
+
+          <div class="col-4">
+            Image 1
+          </div>
+
+          <div class="col-4">
+            Image 1
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 
--->
+
 
   <div class="row-wrapper d-md-none" id="categories">
     <div class="row content">
@@ -182,7 +197,7 @@
 
   <div class="row-wrapper d-none d-md-block" id="nested-dropdown">
     <div class="row content">
-      <div class="col-12">
+      <div class="col-12 d-lg-none">
           <ul class="main-nav">
             <li class="row">
 
@@ -232,6 +247,23 @@
               </ul>
             </li>
           </ul>
+      </div>
+
+      <div class="col-12 desktop-categories d-none d-lg-block">
+        <div class="row">
+          <ul>
+            <li>TECHNOLOGY</li>
+            <li>HOME & GARDEN</li>
+            <li>BABY & NURSERY</li>
+            <li>TOYS</li>
+            <li>SPORTS & LEISURE</li>
+            <li>HEALTH & SAFETY</li>
+            <li>CLOTHING</li>
+            <li>JEWELLERY & WATCHES</li>
+            <li>GIFTS</li>
+            <li>TOYS OFFERS</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -370,15 +402,11 @@
         </div>
 
       </div>
-
-
-
-
     </div>
   </div>
 
-  <div class="row-wrapper" >
-    <div class="row content" id="email-signup">
+  <div class="row-wrapper" id="email-signup">
+    <div class="row content" >
         <div class="col-12" >
           <span class="oi oi-envelope-closed"></span>
           <h4>Get our offers in your inbox</h4>
@@ -393,15 +421,15 @@
     </div>
   </div>
 
-  <div class="row-wrapper" >
+  <div class="row-wrapper" id="advert">
     <div class="row content">
-      <div class="col-12" id="advert">
+      <div class="col-12" >
       <img src="assets/img/ad-1.jpg" alt="this is an advert">
       </div>
     </div>
   </div>
 
-  <div class="row-wrapper" >
+  <div class="row-wrapper" id="app-advert">
     <div class="row content">
       <div class="col-12 app-advert">
         <div class="row">
@@ -418,9 +446,9 @@
     </div>
   </div>
 
-  <div class="row-wrapper" >
+  <div class="row-wrapper" id="nearest-store-button">
     <div class="row content">
-      <div class="col-12" id="nearest-store-button">
+      <div class="col-12" >
         <h4>FIND YOUR NEAREST STORE</h4>
         <form class="" action="index.html" method="post">
           <input id="postcode" type="text" placeholder="My town or postcode is..." value="">
