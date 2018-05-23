@@ -24,7 +24,7 @@ h4 {
     height: 100%;
     padding: 0.5rem;
     padding-bottom: 0;
-    padding-left: 7px;
+    padding-left: 0px;
     width: 100%; }
 
 .top-nav-left ul li {
@@ -53,10 +53,11 @@ h4 {
 .desktop-nav {
   background-color: #f5f5f5;
   padding: 0.5rem;
-  padding-top: 1.1rem; }
+  padding-top: 1.1rem;
+  padding-left: 0;
+  padding-right: 0; }
   .desktop-nav .row {
-    margin: 0;
-    padding-right: 7px; }
+    margin: 0; }
     .desktop-nav .row div {
       padding: 0; }
       .desktop-nav .row div .search-bar {
@@ -155,12 +156,50 @@ h4 {
   margin-top: 9.5rem; }
 
 #gif {
-  padding: 7px; }
-  #gif div {
-    margin: 0; }
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px; }
 
-#categories div {
-  padding: 7px; }
+.desktop-gif {
+  width: 100%; }
+  .desktop-gif div {
+    margin: 0;
+    height: 100%;
+    flex: 1;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+    .desktop-gif div .gif-image {
+      background-color: #f5f5f5;
+      height: 100%;
+      text-align: center; }
+      .desktop-gif div .gif-image .row div {
+        padding-left: 7px;
+        padding-right: 7px; }
+        .desktop-gif div .gif-image .row div span {
+          color: #781f74;
+          font-size: 32px; }
+        .desktop-gif div .gif-image .row div p {
+          color: #781f74;
+          font-size: 12px;
+          font-weight: bold;
+          height: 100%;
+          margin: 0;
+          text-align: left;
+          text-transform: uppercase; }
+        .desktop-gif div .gif-image .row div .gif-small-text {
+          color: black;
+          font-size: 9px;
+          font-weight: bold; }
+  .desktop-gif .middle-gif-image {
+    margin-left: 10px;
+    margin-right: 10px; }
+
+#categories {
+  margin-top: 9rem;
+  margin-bottom: -9rem; }
+  #categories div {
+    padding: 7px; }
 
 .navbar {
   background-color: #f5f5f5;
@@ -186,10 +225,14 @@ h4 {
   display: none !important;
   position: absolute; }
 
-#nested-dropdown div {
+#nested-dropdown {
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: #f5f5f5; }
-  #nested-dropdown div div {
-    z-index: 100000000; }
+  #nested-dropdown div {
+    background-color: #f5f5f5; }
+    #nested-dropdown div div {
+      z-index: 100000000; }
 
 .main-nav {
   list-style: none;
@@ -259,9 +302,10 @@ h4 {
     color: #0c509f !important; }
 
 .desktop-categories {
+  padding-left: 0;
   padding-top: 1rem; }
   .desktop-categories .row {
-    padding-left: 15px; }
+    margin: 0; }
     .desktop-categories .row ul {
       list-style-type: none;
       display: inline-flex;
@@ -269,7 +313,7 @@ h4 {
       padding-left: 0; }
       .desktop-categories .row ul li {
         cursor: pointer;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         padding-bottom: 0.5rem;
         padding-top: 0.5rem;
         padding-left: 0.45rem;
@@ -279,8 +323,25 @@ h4 {
           background-color: #ee3224;
           color: white; }
 
-#primary-content .row div {
-  padding: 0rem; }
+.dummy-dropdown {
+  display: none;
+  background-color: red;
+  height: 20rem;
+  position: absolute;
+  width: 100%; }
+  .dummy-dropdown div {
+    padding: 0; }
+    .dummy-dropdown div ul {
+      background-color: red;
+      border: 1px solid black;
+      width: 100%; }
+      .dummy-dropdown div ul li {
+        border: 1px solid black;
+        width: 100%; }
+
+#primary-content {
+  padding-left: 15px;
+  padding-right: 15px; }
   #primary-content .row div img {
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
@@ -338,30 +399,33 @@ h4 {
     cursor: pointer;
     width: 100%; }
 
-#suggestions-slider .content {
-  padding-top: 3rem;
-  padding-bottom: 3rem; }
-#suggestions-slider .slider-header {
-  text-align: center;
-  font-family: Anton, sans-serif; }
-#suggestions-slider .product-slider {
-  cursor: pointer;
-  width: 100%; }
-  #suggestions-slider .product-slider .slick-prev {
-    background-color: red;
-    left: 0;
-    display: none !important; }
-  #suggestions-slider .product-slider .slick-next {
-    background-color: red;
-    right: 0;
-    display: none !important; }
-  #suggestions-slider .product-slider div img {
-    height: 150px;
-    margin: 0 auto;
-    width: 150px; }
-  #suggestions-slider .product-slider div h2, #suggestions-slider .product-slider div h3, #suggestions-slider .product-slider div p {
-    color: black;
-    text-align: center; }
+#suggestions-slider {
+  padding-left: 15px;
+  padding-right: 15px; }
+  #suggestions-slider .content {
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
+  #suggestions-slider .slider-header {
+    text-align: center;
+    font-family: Anton, sans-serif; }
+  #suggestions-slider .product-slider {
+    cursor: pointer;
+    width: 100%; }
+    #suggestions-slider .product-slider .slick-prev {
+      background-color: red;
+      left: 0;
+      display: none !important; }
+    #suggestions-slider .product-slider .slick-next {
+      background-color: red;
+      right: 0;
+      display: none !important; }
+    #suggestions-slider .product-slider div img {
+      height: 150px;
+      margin: 0 auto;
+      width: 150px; }
+    #suggestions-slider .product-slider div h2, #suggestions-slider .product-slider div h3, #suggestions-slider .product-slider div p {
+      color: black;
+      text-align: center; }
 
 #email-signup .row {
   padding-bottom: 3rem;
@@ -406,8 +470,8 @@ h4 {
     background-color: #d42114;
     color: white;
     text-align: center;
-    padding-bottom: 2rem;
-    padding-top: 2rem; }
+    padding-bottom: 1rem;
+    padding-top: 1rem; }
     #app-advert .row .app-advert h4 {
       font-family: Anton, sans-serif; }
     #app-advert .row .app-advert h5 {
@@ -429,8 +493,8 @@ h4 {
       text-align: center;
       margin-top: 1rem;
       margin-bottom: 1rem;
-      padding-bottom: 2rem;
-      padding-top: 2rem; }
+      padding-bottom: 0rem;
+      padding-top: 0rem; }
       #nearest-store-button .row div h4, #nearest-store-button .row div form {
         display: inline-block; }
       #nearest-store-button .row div form #postcode, #nearest-store-button .row div form #submit-postcode {
@@ -557,7 +621,10 @@ h4 {
     position: relative;
     top: auto;
     width: auto;
-    z-index: auto; }
+    z-index: auto;
+    background-color: #f5f5f5;
+    padding-left: 15px;
+    padding-right: 15px; }
 
   .gif-wrapper {
     margin-top: 1rem; }
@@ -572,9 +639,11 @@ h4 {
     display: inline-block !important; }
 
   #primary-content .row > :nth-child(1) {
-    padding-right: 7px; }
+    padding-right: 7px;
+    padding-left: 0; }
   #primary-content .row > :nth-child(2) {
-    padding-left: 7px; }
+    padding-left: 7px;
+    padding-right: 0; }
   #primary-content .row div {
     padding-left: 15px;
     padding-right: 15px; }
@@ -638,10 +707,13 @@ h4 {
       position: absolute;
       top: 0; }
 
-  #image-gallery .row {
-    padding-left: 10px;
-    padding-right: 10px; }
+  #image-gallery {
+    padding-left: 15px;
+    padding-right: 15px; }
     #image-gallery .row div {
+      flex: 1;
+      max-width: none; }
+    #image-gallery .row .image-gallery-middle {
       padding-left: 5px;
       padding-right: 5px; }
 
@@ -649,7 +721,8 @@ h4 {
     padding-left: 15px;
     padding-right: 15px; }
     #email-signup div {
-      display: inline-flex; }
+      text-align: center;
+      display: block; }
       #email-signup div h4 {
         margin: 0 auto; }
 
