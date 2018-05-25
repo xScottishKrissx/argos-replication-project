@@ -3,14 +3,22 @@
 @import "_variables.scss";
 //Replaces Argos Compressed
   @import url('https://fonts.googleapis.com/css?family=Anton');
-
+  @import url('https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700');
+  // font-family: 'Teko', sans-serif;
 *{
   //border-left: 1px solid blue; border-right: 1px solid blue;
+  font-family: 'Teko', sans-serif;
 }
 
 // CSS here...
+h1{font-size: 5rem;}
+h2{font-size: 4rem;}
+h3{font-size: 3rem;}
+h4{font-size: 2rem;}
+h5{font-size: 1.5rem;}
+h6{font-size: 1rem;}
 
-h4{font-family: Anton, sans-serif;}
+li, p{font-size: 1.2rem; font-weight: 100;}
 
 .row-wrapper{
   background-color: white;
@@ -418,7 +426,10 @@ h4{font-family: Anton, sans-serif;}
     }
 
   }
-  .oi{color: $argos-chevron-blue;}
+  .oi{
+    color: $argos-chevron-blue;
+    padding-right: 5px;
+  }
 }
 .nav-levels{
   width: 10rem;
@@ -432,9 +443,21 @@ h4{font-family: Anton, sans-serif;}
 #nav-level-3{top: -202%;}
 .categories-header{
 
-  border-left: 1px solid $argos-grey-top-nav;
-  border-right: 1px solid $argos-grey-top-nav;
-  &:hover{background-color: white;}
+  border-left: 0px solid $argos-grey-top-nav;
+  border-right: 0px solid $argos-grey-top-nav;
+  color: $argos-categories-header-grey !important;
+  font-weight: bold !important;
+  h5{
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    display: initial;
+  }
+  &:hover{
+    background-color: white;
+    border-left: 1px solid $argos-grey-top-nav;
+    border-right: 1px solid $argos-grey-top-nav;
+  }
 
   //transition: all 1s;
 }
@@ -449,30 +472,39 @@ h4{font-family: Anton, sans-serif;}
   padding-left: 0;
   padding-top: 1rem;
   .row{
-    //padding-left: 15px;
+    padding-left: 0px;
     margin: 0;
+    >ul{display: flex;}
     ul{
       list-style-type: none;
-      display: inline-flex;
+
       //margin: 0 auto;
       margin-bottom: 0;
       padding-left: 0;
       //width: 100%;
+
       li{
         //border: 1px solid black;
+        color: black;
         cursor: pointer;
         //flex:1 0 0%;
         //font-size: 13px;
-        font-size: 0.7rem;
+        font-size: 1.4rem;
         padding-bottom: 0.5rem;
         padding-top: 0.5rem;
-        padding-left: 0.45rem;
+        padding-left: 0.0rem;
         padding-right: 0.45rem;
         text-align: center;
-
         &:hover{
           background-color: $argos-red;
           color: white;
+        }
+
+        &:hover{
+          .dummy-dropdown{
+
+            display: flex;
+          }
         }
 
 
@@ -481,21 +513,29 @@ h4{font-family: Anton, sans-serif;}
   }
 }
 .dummy-dropdown{
+  border-top: 5px solid $argos-red;
   display: none;
+  flex: 1;
   background-color: red;
-  height: 20rem;
+  //height: 20rem;
   position: absolute;
   width: 100%;
   div{
     padding: 0;
+    display: flex;
+    flex:1;
     ul{
-      background-color: red;
-      border: 1px solid black;
+      display: inline-block ;
+      background-color: white;
+
       width: 100%;
       li{
-        border: 1px solid black;
+        //border: 1px solid black;
         width: 100%;
-
+        &:hover{
+          background-color: $argos-red;
+          color: white;
+        }
       }
     }
   }
@@ -606,8 +646,10 @@ h4{font-family: Anton, sans-serif;}
   }
 
   .slider-header{
+    color: $argos-categories-header-grey;
     text-align: center;
-    font-family: Anton, sans-serif;
+    padding-bottom: 3rem;
+
   }
   .product-slider{
     cursor: pointer;
@@ -623,10 +665,11 @@ h4{font-family: Anton, sans-serif;}
         margin: 0 auto;
         width: 150px;
       }
-      h2,h3, p{
+      h2,h3,h4,h5,h6 p{
         color: black;
         text-align: center;
       }
+      p{min-height: 4rem;}
     }
   }
 }
@@ -634,16 +677,18 @@ h4{font-family: Anton, sans-serif;}
 #email-signup{
   //background-color: #f5f5f5;
   .row{
-    padding-bottom: 3rem;
+    //padding-bottom: 3rem;
     padding-top: 3rem;
-    div{
-      background-color: #f5f5f5;
-      text-align: center;
-      padding-bottom: 2rem;
-      padding-top: 2rem;
+    background-color: #f5f5f5;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    //*{border: 1px solid black;}
       .oi{font-size: 3rem;}
-      h4{font-weight: 400;}
+
       form{
+        margin: 0 auto;
+        padding-bottom: 1rem;
         #enter-email{
           border: 1px solid grey;
           margin-right: -0.25rem;
@@ -662,13 +707,17 @@ h4{font-family: Anton, sans-serif;}
           padding-bottom: 0.5rem;
         }
       }
-
-
-    }
+      h4{font-weight: 400;}
       span{
+
         font-size: .75rem;
         margin: 0 auto;
         text-align: center;
+      }
+      span, h4{width: 100%;}
+      #email-terms{
+        background-color: white;
+        padding-top: 0.5rem;
       }
   }
 }
@@ -689,8 +738,8 @@ h4{font-family: Anton, sans-serif;}
       text-align: center;
       padding-bottom: 1rem;
       padding-top: 1rem;
-      h4{font-family: Anton, sans-serif;}
-      h5{font-weight: 100;}
+
+      h5{font-weight: 100; margin: 0 auto;}
       .row{
         margin: 0 auto;
         max-width: 22rem;
@@ -833,6 +882,9 @@ h4{font-family: Anton, sans-serif;}
       background-color: $argos-footer-grey;
       margin: 0 auto;
       max-width: 400px;
+      .row{
+        img{height: 40px;}
+      }
     }
 
   }

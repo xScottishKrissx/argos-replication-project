@@ -135,10 +135,10 @@
   #email-signup{
     padding-left: 15px;
     padding-right: 15px;
-    div{
-      text-align: center;
-      display: block;
-      h4{margin: 0 auto;}
+    *{flex-grow: 1;}
+    .row{
+      span, h4{width: auto;}
+      #email-terms{width: 100%;}
     }
   }
   #advert{
@@ -146,14 +146,21 @@
       max-height: 8rem;
     }
   }
-  .app-advert{
-    display: flex;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+
+  #app-advert{
     .row{
-      img{height: 60%;}
+      .app-advert{
+        display: flex;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        .row{
+          max-height: 5rem;
+          img{height:40px; margin-top: 1rem;}
+        }
+      }
     }
   }
+
 
   #text-paragraph{
 
@@ -254,6 +261,11 @@
   .main-nav{
 
   }
+  #nested-dropdown{
+    .row{
+      padding-left: 0;
+    }
+  }
 }
 
 @media only screen and (min-width:1170px) {
@@ -261,12 +273,6 @@
     background-color: $argos-grey-categories;
   }
 
-
-  #nested-dropdown{
-    .row{
-      padding-left: 7px;
-    }
-  }
 
   #primary-content{
     .row{

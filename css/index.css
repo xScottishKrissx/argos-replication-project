@@ -1,6 +1,29 @@
 @import url("https://fonts.googleapis.com/css?family=Anton");
+@import url("https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700");
+* {
+  font-family: 'Teko', sans-serif; }
+
+h1 {
+  font-size: 5rem; }
+
+h2 {
+  font-size: 4rem; }
+
+h3 {
+  font-size: 3rem; }
+
 h4 {
-  font-family: Anton, sans-serif; }
+  font-size: 2rem; }
+
+h5 {
+  font-size: 1.5rem; }
+
+h6 {
+  font-size: 1rem; }
+
+li, p {
+  font-size: 1.2rem;
+  font-weight: 100; }
 
 .row-wrapper {
   background-color: white; }
@@ -274,7 +297,8 @@ h4 {
         top: 0%;
         border: 1px solid #dadcdc; }
   .main-nav .oi {
-    color: #0c509f; }
+    color: #0c509f;
+    padding-right: 5px; }
 
 .nav-levels {
   width: 10rem;
@@ -288,10 +312,19 @@ h4 {
   top: -202%; }
 
 .categories-header {
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc; }
+  border-left: 0px solid #ccc;
+  border-right: 0px solid #ccc;
+  color: #585858 !important;
+  font-weight: bold !important; }
+  .categories-header h5 {
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    display: initial; }
   .categories-header:hover {
-    background-color: white; }
+    background-color: white;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc; }
 
 .rotate-180-deg {
   transform: rotate(180deg); }
@@ -305,39 +338,49 @@ h4 {
   padding-left: 0;
   padding-top: 1rem; }
   .desktop-categories .row {
+    padding-left: 0px;
     margin: 0; }
+    .desktop-categories .row > ul {
+      display: flex; }
     .desktop-categories .row ul {
       list-style-type: none;
-      display: inline-flex;
       margin-bottom: 0;
       padding-left: 0; }
       .desktop-categories .row ul li {
+        color: black;
         cursor: pointer;
-        font-size: 0.7rem;
+        font-size: 1.4rem;
         padding-bottom: 0.5rem;
         padding-top: 0.5rem;
-        padding-left: 0.45rem;
+        padding-left: 0.0rem;
         padding-right: 0.45rem;
         text-align: center; }
         .desktop-categories .row ul li:hover {
           background-color: #ee3224;
           color: white; }
+        .desktop-categories .row ul li:hover .dummy-dropdown {
+          display: flex; }
 
 .dummy-dropdown {
+  border-top: 5px solid #ee3224;
   display: none;
+  flex: 1;
   background-color: red;
-  height: 20rem;
   position: absolute;
   width: 100%; }
   .dummy-dropdown div {
-    padding: 0; }
+    padding: 0;
+    display: flex;
+    flex: 1; }
     .dummy-dropdown div ul {
-      background-color: red;
-      border: 1px solid black;
+      display: inline-block;
+      background-color: white;
       width: 100%; }
       .dummy-dropdown div ul li {
-        border: 1px solid black;
         width: 100%; }
+        .dummy-dropdown div ul li:hover {
+          background-color: #ee3224;
+          color: white; }
 
 #primary-content {
   padding-left: 15px;
@@ -406,8 +449,9 @@ h4 {
     padding-top: 3rem;
     padding-bottom: 3rem; }
   #suggestions-slider .slider-header {
+    color: #585858;
     text-align: center;
-    font-family: Anton, sans-serif; }
+    padding-bottom: 3rem; }
   #suggestions-slider .product-slider {
     cursor: pointer;
     width: 100%; }
@@ -423,30 +467,31 @@ h4 {
       height: 150px;
       margin: 0 auto;
       width: 150px; }
-    #suggestions-slider .product-slider div h2, #suggestions-slider .product-slider div h3, #suggestions-slider .product-slider div p {
+    #suggestions-slider .product-slider div h2, #suggestions-slider .product-slider div h3, #suggestions-slider .product-slider div h4, #suggestions-slider .product-slider div h5, #suggestions-slider .product-slider div h6 p {
       color: black;
       text-align: center; }
+    #suggestions-slider .product-slider div p {
+      min-height: 4rem; }
 
 #email-signup .row {
-  padding-bottom: 3rem;
-  padding-top: 3rem; }
-  #email-signup .row div {
-    background-color: #f5f5f5;
-    text-align: center;
-    padding-bottom: 2rem;
-    padding-top: 2rem; }
-    #email-signup .row div .oi {
-      font-size: 3rem; }
-    #email-signup .row div h4 {
-      font-weight: 400; }
-    #email-signup .row div form #enter-email {
+  padding-top: 3rem;
+  background-color: #f5f5f5;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-top: 2rem; }
+  #email-signup .row .oi {
+    font-size: 3rem; }
+  #email-signup .row form {
+    margin: 0 auto;
+    padding-bottom: 1rem; }
+    #email-signup .row form #enter-email {
       border: 1px solid grey;
       margin-right: -0.25rem;
       padding-left: 2rem;
       padding-right: 2rem;
       padding-top: 0.5rem;
       padding-bottom: 0.5rem; }
-    #email-signup .row div form #submit-email {
+    #email-signup .row form #submit-email {
       background-color: white;
       border: 1px solid black;
       font-weight: bold;
@@ -454,10 +499,17 @@ h4 {
       padding-right: 2rem;
       padding-top: 0.5rem;
       padding-bottom: 0.5rem; }
+  #email-signup .row h4 {
+    font-weight: 400; }
   #email-signup .row span {
     font-size: .75rem;
     margin: 0 auto;
     text-align: center; }
+  #email-signup .row span, #email-signup .row h4 {
+    width: 100%; }
+  #email-signup .row #email-terms {
+    background-color: white;
+    padding-top: 0.5rem; }
 
 #advert {
   padding-bottom: 4rem; }
@@ -472,10 +524,9 @@ h4 {
     text-align: center;
     padding-bottom: 1rem;
     padding-top: 1rem; }
-    #app-advert .row .app-advert h4 {
-      font-family: Anton, sans-serif; }
     #app-advert .row .app-advert h5 {
-      font-weight: 100; }
+      font-weight: 100;
+      margin: 0 auto; }
     #app-advert .row .app-advert .row {
       margin: 0 auto;
       max-width: 22rem; }
@@ -572,6 +623,8 @@ h4 {
       background-color: #333;
       margin: 0 auto;
       max-width: 400px; }
+      #social-media > .row .app-advert .row img {
+        height: 40px; }
 
 #second-footer {
   background-color: black; }
@@ -720,21 +773,25 @@ h4 {
   #email-signup {
     padding-left: 15px;
     padding-right: 15px; }
-    #email-signup div {
-      text-align: center;
-      display: block; }
-      #email-signup div h4 {
-        margin: 0 auto; }
+    #email-signup * {
+      flex-grow: 1; }
+    #email-signup .row span, #email-signup .row h4 {
+      width: auto; }
+    #email-signup .row #email-terms {
+      width: 100%; }
 
   #advert img {
     max-height: 8rem; }
 
-  .app-advert {
+  #app-advert .row .app-advert {
     display: flex;
     padding-top: 1rem;
     padding-bottom: 1rem; }
-    .app-advert .row img {
-      height: 60%; }
+    #app-advert .row .app-advert .row {
+      max-height: 5rem; }
+      #app-advert .row .app-advert .row img {
+        height: 40px;
+        margin-top: 1rem; }
 
   #text-paragraph .row {
     padding-bottom: 0.5rem;
@@ -786,11 +843,11 @@ h4 {
     max-width: 370px; }
     #second-footer .row div ul li {
       font-size: 12px; } }
+@media only screen and (min-width: 992px) {
+  #nested-dropdown .row {
+    padding-left: 0; } }
 @media only screen and (min-width: 1170px) {
   #top-nav, #categories, #nested-dropdown {
-    background-color: #f5f5f5; }
-
-  #nested-dropdown .row {
-    padding-left: 7px; } }
+    background-color: #f5f5f5; } }
 
 /*# sourceMappingURL=index.css.map */
