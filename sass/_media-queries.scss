@@ -102,7 +102,7 @@
           bottom: 0;
           padding-bottom: 0;
           padding-top: 0;
-          h3,p,h5,*{margin:0 auto;}
+
         }
         #2-image-tiles{
           position: absolute;
@@ -168,9 +168,11 @@
       padding-bottom: 0.5rem;
       padding-top: 0.5rem;
       div{
-        font-size: 0.75rem;
+
         p{
-          line-height: 0.7rem;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1rem;
         }
       }
     }
@@ -217,7 +219,7 @@
     .row{
       div{
         color: $argos-footer-grey;
-        p{font-size: 0.75rem;}
+        p{font-size: 1.25rem;}
       }
       #payment-method-cards{
         .row{
@@ -247,7 +249,7 @@
         max-width: 370px;
         ul{
           li{
-            font-size: 12px;
+            font-size: 1.3rem;
           }
         }
       }
